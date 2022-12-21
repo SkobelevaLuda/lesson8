@@ -8,6 +8,7 @@ public class RecipeList {
             throw new IllegalArgumentException(" Такой рецепт уже есть");
         }
         recipes.add(recipe);
+
     }
     public void remove(Product product) {
         recipes.remove(product);
