@@ -5,17 +5,24 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+
+        PasportList pasportList = new PasportList(
+                Set.of(
+                        new Passport(4569875, " Иванов", " Петр", "Николаевич", 2000),
+                        new Passport(4569875, " Иваночкин", " Павел", "Николаевич",
+                                2000)));
+        System.out.println(pasportList);
+
+
+
         Random random = new Random();
 
-        Set<Exersize> exersizes=new HashSet<>();
-        while (exersizes.size()<15){
-            Exersize exersize=new Exersize(random.nextInt(10),random.nextInt(10));
+        Set<Exersize> exersizes = new HashSet<>();
+        while (exersizes.size() < 15) {
+            Exersize exersize = new Exersize(random.nextInt(10), random.nextInt(10));
             exersizes.add(exersize);
             System.out.println(exersize);
         }
-
-
-
 
 
         Set<Integer> nambers = new HashSet<>();
