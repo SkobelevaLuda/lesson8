@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Passport {
     private int namber;
@@ -54,6 +55,19 @@ public class Passport {
 
     public void setDataYear(LocalDate dataYear) {
         this.dataYear = dataYear;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Passport passport = (Passport) o;
+        return namber == passport.namber;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(namber);
     }
 
     @Override

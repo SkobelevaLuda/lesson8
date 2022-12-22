@@ -8,7 +8,7 @@ public class Main {
 
         PasportList pasportList = new PasportList(
                 Set.of(
-                        new Passport(4569875, " Иванов", " Петр", "Николаевич", 2000),
+                        new Passport(4569885, " Иванов", " Петр", "Николаевич", 2000),
                         new Passport(4569875, " Иваночкин", " Павел", "Николаевич",
                                 2000)));
         System.out.println(pasportList);
@@ -19,7 +19,7 @@ public class Main {
 
         Set<Exersize> exersizes = new HashSet<>();
         while (exersizes.size() < 15) {
-            Exersize exersize = new Exersize(random.nextInt(10), random.nextInt(10));
+            Exersize exersize = new Exersize(random.nextInt(8)+2, random.nextInt(8)+2);
             exersizes.add(exersize);
             System.out.println(exersize);
         }
