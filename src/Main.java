@@ -6,6 +6,18 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
+
+        Set<Exersize> exersizes=new HashSet<>();
+        while (exersizes.size()<15){
+            Exersize exersize=new Exersize(random.nextInt(10),random.nextInt(10));
+            exersizes.add(exersize);
+            System.out.println(exersize);
+        }
+
+
+
+
+
         Set<Integer> nambers = new HashSet<>();
         while (nambers.size() < 20) {
             nambers.add(random.nextInt(1000));
