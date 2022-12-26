@@ -23,6 +23,7 @@ public class Product {
         this.productName = productName;
     }
 
+
     public int getProductPrice() {
         return productPrice;
     }
@@ -33,6 +34,7 @@ public class Product {
         }
         this.productPrice = productPrice;
     }
+
 
     public int getProductQuantity() {
         return productQuantity;

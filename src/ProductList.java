@@ -1,16 +1,18 @@
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class ProductList {
-    private Set<Product> products=new HashSet<>();
-    public void add(Product product){
-        if (products.contains(product)){
+    private final Map<Product, Integer> products = new HashMap();
+    public void add(Product product, int productQuantity){
+        if (products.containsKey(product)){
             throw new IllegalArgumentException(" Такой продукт уже есть");
         }
-        products.add(product);
+        products.put(product,productQuantity);
     }
-    public void remove(Product product) {
-        products.remove(product);
+    public void add(Product product) {
+        add(product,1);
         }
     }
 
