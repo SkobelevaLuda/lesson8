@@ -1,10 +1,22 @@
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        HashMap<String, String> map=new HashMap<>();
+        map.put(" Иванов А.А.", "89874141212");
+        map.put(" Иваскина Е.А.", "89855541212");
+        map.put(" Иввушкина Е.А.", "89874148872");
+        map.put(" Игрунина К.А.", "89874114012");
+        map.put(" Ивашкина Я.А.", "89800141212");
+        map.put(" Инушкина А.К.", "89874141002");
+        map.put(" Кутова Н.А.", "89870061212");
+        map.put(" Катова Р.А.", "89874146602");
+        map.put(" Антонова А.А.", "89874100002");
+        map.put(" Ивановичус А.О.", "89874149982");
+
+        System.out.println(map);
+
 
         PasportList pasportList = new PasportList(
                 Set.of(
@@ -37,19 +49,18 @@ public class Main {
             }
         }
         System.out.println(nambers);
+        HashMap <String, Integer> map1= new HashMap<>();
+       map1.put("банан", 5);
+       map1.put("молоко",8);
+       map1.put("хлеб",2);
+       map1.put("кукуруза",6);
+       map1.put("банан",0);
+       map1.put("яблоки",2);
+       map1.put("курица",5);
+       map1.put("банан",4);
 
-       /*Set <String> set= new HashSet<>();
-       set.add("банан");
-       set.add("молоко");
-       set.add("хлеб");
-       set.add("кукуруза");
-       set.add("банан");
-       set.add("яблоки");
-       set.add("курица");
-       set.add("банан");
+        System.out.println(map1.get("банан"));
 
-        System.out.println(Arrays.toString(set.toArray(new String[0])));
-    }*/
     }
 
 }
